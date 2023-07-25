@@ -1,5 +1,5 @@
 public class Main {
-   // 2. feladat: A main függvényben írasd ki a hárommal osztható páros számokat egy sorba!
+    // 2. feladat: A main függvényben írasd ki a hárommal osztható páros számokat egy sorba!
     public static void main(String[] args) {
         int count = 0;
         // Ciklus, amely az első 10 hárommal osztható páros számot keresi
@@ -17,6 +17,7 @@ public class Main {
         int largestEven = findLargestEven(numbers);         // findLargestEven függvényt meghívjuk a numbers tömbön és az eredményt eltároljuk a largestEven változóban
         System.out.println();
         System.out.println("A tömbben található legnagyobb páros szám: " + largestEven);
+        System.out.println("5. feladat megoldása: " + Calculator.add(3, 4));
     }
 
     public static int findLargestEven(int[] array) {        // ez a metódus találja meg a legnagyobb páros számot a tömbben
@@ -30,30 +31,9 @@ public class Main {
 
         return largestEven;
     }
-    public class Calculator {
-
-        public static void main(String[] args) {
-            int result1 = power(2, 3);
-            int result2 = subtract(10, 5);
-            int result3 = add(7, 3);
-
-            System.out.println("Hatványozás: " + result1);
-            System.out.println("Kivonás: " + result2);
-            System.out.println("Összeadás: " + result3);
-        }
-
-        public static int power(int base, int exponent) {
-            return (int) Math.pow(base, exponent);
-        }
-
-        public static int subtract(int a, int b) {
-            return a - b;
-        }
-
-        public static int add(int a, int b) {
-            return a + b;
-        }
-    }
 }
+
+
+
 
 
